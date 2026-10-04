@@ -1,0 +1,6 @@
+import type { DemoItem } from "../demo/data.js";
+import { Icon, Panel, StatusBadge } from "../components/ui.js";
+
+export function Detail({ item }: { item: DemoItem }) {
+  return <><div class="mb-8 flex flex-wrap items-end justify-between gap-4"><div class="min-w-0"><h1>{item.name}</h1><p class="mt-4 text-muted">{item.description}</p></div><a href="/examples" class="btn-secondary"><Icon name="back" />一覧へ戻る</a></div><div class="layout-grid"><Panel class="col-span-full" title="サンプル詳細" action={<StatusBadge status={item.status} />}><dl class="panel-body layout-grid"><div class="col-span-full md:col-span-4 lg:col-span-6"><dt class="text-sm text-muted">ID</dt><dd class="mt-2 font-mono">{item.id}</dd></div><div class="col-span-full md:col-span-4 lg:col-span-6"><dt class="text-sm text-muted">カテゴリ</dt><dd class="mt-2">{item.category}</dd></div><div class="col-span-full md:col-span-4 lg:col-span-6"><dt class="text-sm text-muted">更新日</dt><dd class="mt-2 tabular-nums">{item.updatedAt}</dd></div><div class="col-span-full md:col-span-4 lg:col-span-6"><dt class="text-sm text-muted">データの種類</dt><dd class="mt-2">デモ用の固定データ</dd></div></dl></Panel><div class="notice col-span-full"><Icon name="info" /><p>このサンプルはデモ用の固定データです。</p></div></div></>;
+}

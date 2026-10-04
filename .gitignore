@@ -1,0 +1,15 @@
+node_modules/
+.wrangler/
+dist/
+.test-build/
+output/
+.playwright-cli/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.env
+.env.*
+!.env.example
+public/assets/app.css
+*.log
+worker-configuration.d.ts
