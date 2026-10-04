@@ -50,7 +50,7 @@
   .btn-primary { @apply btn bg-primary text-on-primary disabled:opacity-50; }
   .btn-primary:hover:not(:disabled) { background-color: #8297ca; }
   .btn-secondary { @apply btn border-control-border bg-surface text-foreground hover:bg-surface-alt disabled:opacity-50; }
-  .btn-danger { @apply btn bg-danger text-black disabled:opacity-50; }
+  .btn-danger { @apply btn bg-danger text-white disabled:opacity-50; }
   .btn-danger:hover:not(:disabled) { background-color: #f04444; }
   .icon-button { @apply inline-flex h-11 w-11 items-center justify-center rounded-md text-muted hover:bg-surface-alt; }
   .menu-button { @apply inline-flex min-h-[44px] shrink-0 items-center justify-center gap-2 rounded-md px-2 text-base font-medium text-muted hover:bg-surface-alt; }
